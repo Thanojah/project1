@@ -1,0 +1,147 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+.header-wrapper{
+	background:#242d3e;
+	margin:0 auto;
+	height:110px;
+}
+.header-wrapper img{
+	width:130px;
+}
+.left-header-wrapper{
+	float:left;
+}
+.right-header-wrapper{
+	float:right;
+	display:inline-block;
+	position:relative;
+}
+.right-header-wrapper ul  {
+	list-style-type:none;
+}
+.right-header-wrapper ul li{
+	float:left;
+	color:white;
+}
+.right-header-wrapper ul li a{
+	font-size:15px;
+	font-family:sans-serif;
+	padding:0 5px;
+	text-decoration:none;
+	color:white;
+	margin:auto;
+	display:block;
+}
+.slider-wrapper{
+	height:185px;
+	display: flex;
+    flex-wrap: wrap;
+	background:#c7d0d9;
+}
+.left-slider-wrapper {
+	float: left;
+	width:55%;
+	font-family:sans-serif;
+}
+.left-slider-wrapper h2{
+	color:green;
+	margin-left:20px;
+	font-size:25px;
+}
+.button{
+	display:inline-block;
+	text-decoration:none;
+	color:blue;
+	border:	5px solid black;
+	padding:12px 10px;
+	margin-left:80px;
+	font-size:13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.button:hover{
+	border:3 px solid red;
+	background:red;
+	transition:1s;
+}
+
+.right-slider-wrapper img{
+	width:250px;
+	height:100%;
+	float:right;
+}
+	
+	
+.main-wrapper h1{
+	text-align:center;
+	text-decoration:underline;
+	text-decoration-color:green;
+}
+.menu-wrapper {
+	float:left;
+	width:33.33%;
+}
+.menu-wrapper h1{
+		font-size:29px;
+}
+.menu-wrapper img{
+	height:100%;
+	width:80%;
+}
+.menu-wrappers .menu-wrapper h1{
+	color:blue;
+	text-align:left;
+	text-decoration-color:black;
+}
+.bottom-wrapper {
+	height:300px;
+	color:green;
+	font-size:25px;
+}
+@media screen and (max-width:600px){
+	.header-wrapper{
+		height:90px;
+	}
+	.header-wrapper img{
+		width:110px;
+	}
+	.right-header-wrapper ul li a{
+		font-size:12px;
+	}
+	
+	.left-slider-wrapper {
+		width:35%;
+	}
+	.left-slider-wrapper h2{
+		margin-left:20px;
+		font-size:20px;
+    }
+	.right-slider-wrapper img{
+		width:80%;
+		height:100%;
+		float:left;
+		margin-left:20px;
+	}
+	.button{
+		border:	2px solid black;
+		padding:10px 8px;
+		font-size:10px;
+	}
+	.bottom-wrapper {
+		font-size:12px;
+	}
+	.menu-wrapper p {
+		font-size:12px;
+	}
+	.menu-wrapper img{
+		height:100px;
+		width:150px;
+	}
+	.menu-wrapper h1{
+		font-size:12px;
+	}
+}
