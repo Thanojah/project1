@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        #slideshow{
+            margin: 50px auto;
+            position: relative;
+            width: 280px;
+            height: 190px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0,2,1,0.4);
+        }
+        #slideshow > div {
+            position: absolute;
+            top:10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="slideshow">
+    <div>
+        <img src="download (2).jfif">
+    </div>
+    <div>
+        <img src="images.jfif">
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $("#slideshow > div").hide();
+    setInterval(function() {
+        $('#slideshow > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#slideshow');
+    },1000);
+</script>
+</body>
+</html>
